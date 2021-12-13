@@ -18,29 +18,23 @@
 	
         <!-- start of nav -->
 		
-		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href ="index.html" class="active">Home</a>
-  <!-- Navigation links (hidden by default) -->
-
-            <div id="myLinks">
-			
-				
-				<a href="activities.html">Things to do</a> 
-				<a href="game2.html">Our Cafe</a> 
-				<a href="game3.html">Gift Shop</a> 
-				<a href="location.html">Our Location</a> 
-				<a href="contact.html">Contact Us</a> 
-                           				
-            </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="js/nav.js" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>    
+        <!-- MENU WRAPPER -->
+<nav id="nav">
+    <!-- THE HAMBURGER -->
+    
+    <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+   
+    <!-- (C) MENU ITEMS -->
+    <div id="navitems">
+                <a href ="index.html" class="active">Home</a>
+				<a href="activities.html">Things to do</a>
+				<a href="game2.html">Our Cafe</a>
+				<a href="game3.html">Gift Shop</a>
+				<a href="location.html">Our Location</a>
+				<a href="contact.html">Contact Us</a>            				
+    </div>
+</nav>    
 		
 		<!-- end of nav -->		
 		
@@ -48,12 +42,16 @@
 		
 	
 
-		<img src="images/background.jpg" id="background" alt="the farmhouse">
+		<!-- <img src="images/background.jpg" id="background" alt="the farmhouse">  -->
 
           <!-- college logo -->
 		  <a href="https://www.glasgowclyde.ac.uk/" target="_blank">
-			<img class="logo" src="images/gcc.png" alt="GCC college logo">
+			<img class="collegelogo" src="images/gcc.png" alt="GCC college logo">
 			</a>
+
+            <a href ="index.html" class="active">
+                <img class="logo" src="images/logo.png" alt="Farm logo">
+                </a>
            
 
 
@@ -61,12 +59,12 @@
 	
 		<!-- start of audio -->
 		
-		<div class="music">
+		<!--<div class="music">
 		<audio preload="meta" loop="true"></audio>  
 		<script src="js/kark.js"></script>
 		   <button id="audioButton1" onclick="audioPlay()"></button>
            <button id="audioButton2" onclick="audioPause()"></button>  
-		</div>
+		</div> -->
 		
 	    <!-- end of audio -->
 		
@@ -74,7 +72,7 @@
 	
 		<!-- social media -->
 
-		<div id="socialmedia">
+		<!-- <div id="socialmedia">
 
 			<center>
 				
@@ -86,7 +84,7 @@
 				 	
             </center>	
 
-		</div>
+		</div> -->
 
         <!-- end of social media -->
 	
