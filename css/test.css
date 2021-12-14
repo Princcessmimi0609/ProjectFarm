@@ -36,7 +36,7 @@ body {
       width: 10vw;
       height: 4vh;
       text-decoration: none;
-      font-size: 2em;
+      font-size: 1.5vw;
       background-color: aliceblue;
       color: dodgerblue;
       
@@ -87,155 +87,170 @@ body {
 
 #footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0vh;
+    right: 80vw;
     width: 100vw;
     height: 4vh;
     background-image: linear-gradient white;
     opacity:50%;
-    color: dodgerblue; 
-    font-size: 2vh;
+    color: blue; 
+    font-size: 2vw;
+    text-shadow: 2px 2px white;
     overflow: hidden;
 
 }
 
 
-  #slider-wrapper {
-
-    position: fixed;
-    top: 7.5vh;
-    width: 99vw;
-    height: 80vh;
-    margin: 100px auto;
-    
-    margin-bottom: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  #s1 {
-    padding: 6px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    margin-left: -36px;
-    border-radius: 20px;
-    opacity: 0.3;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  #s2 {
-    padding: 6px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    margin-left: -12px;
-    border-radius: 20px;
-    opacity: 0.3;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  #s3 {
-    padding: 6px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    margin-left: 12px;
-    border-radius: 20px;
-    opacity: 0.3;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  #s4 {
-    padding: 6px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    margin-left: 36px;
-    border-radius: 20px;
-    opacity: 0.3;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  #s1:hover,
-  #s2:hover,
-  #s3:hover,
-  #s4:hover {
-    opacity: 1;
-  }
-  
-  .inner-wrapper {
-    width: 99vw;
-    height: 80vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-  
-  .control {
-    display: full;
-  }
-  
-  #Slide1:checked ~ .overflow-wrapper {
-    margin-left: 0%;
-  }
-  
-  #Slide2:checked ~ .overflow-wrapper {
-    margin-left: -100%;
-  }
-  
-  #Slide3:checked ~ .overflow-wrapper {
-    margin-left: -200%;
-  }
-  
-  #Slide4:checked ~ .overflow-wrapper {
-    margin-left: -300%;
-  }
-  
-  #Slide1:checked + #s1 {
-    opacity: 1;
-  }
-  
-  #Slide2:checked + #s2 {
-    opacity: 1;
-  }
-  
-  #Slide3:checked + #s3 {
-    opacity: 1;
-  }
-  
-  #Slide4:checked + #s4 {
-    opacity: 1;
-  }
-  
-  .overflow-wrapper {
-    width: 400%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow-y: hidden;
-    z-index: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .slide img {
-    width: 25%;
-    float: left;
-    image-resolution: 100%;
-  }
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #ececec;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.picContainer {
+  top: 15vh;
+  left: 0vw;
+  position: fixed;
+  width: 99.5vw;
+  height: 80vh;
+  border: 5px solid #262626;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0px 50px 100px #262626;
+}
+img {
+  width: 99.5vw;
+  height: 80vh;
+  transition: 1s;
+}
+.img {
+  width: 99.5vw;
+  height: 80vh;
+  position: absolute;
+  z-index: 0;
+  transition: 1s;
+}
+.right {
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+  right: 0;
+  top: 0;
+}
+.right:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+.right:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0.75);
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.right:hover:before {
+  transform: translateY(-50%) scale(1);
+}
+.left {
+  position: relative;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+}
+.left:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+.left:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f104";
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0.75);
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.left:hover:before {
+  transform: translateY(-50%) scale(1);
+}
+input {
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+h2 {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.75);
+  top: -160px;
+  left: 55%;
+  transform: translateX(-50%);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 36px;
+  width: 70%;
+}
+.dot {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  z-index: 99;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 0px 5px #fff;
+}
+.dot.a1 {
+  margin-left: -30px;
+}
+.dot.a2 {
+  margin-left: -10px;
+}
+.dot.a3 {
+  margin-left: 10px;
+}
+.dot.a4 {
+  margin-left: 30px;
+}
+.dot.a1:hover {
+  background: #fff;
+}
+.dot.a2:hover {
+  background: #fff;
+}
+.dot.a3:hover {
+  background: #fff;
+}
+.dot.a4:hover {
+  background: #fff;
+}
+ 
+#info {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.75);
+}

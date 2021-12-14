@@ -39,25 +39,35 @@
 		<!-- end of nav -->		
 		
 		<main><!-- start of main content -->
-            <div id="slider-wrapper">
-                <div class="inner-wrapper">
-                  <input checked type="radio" name="slide" class="control" id="Slide1" />
-                  <label for="Slide1" id="s1"></label>
-                  <input type="radio" name="slide" class="control" id="Slide2" />
-                  <label for="Slide2" id="s2"></label>
-                  <input type="radio" name="slide" class="control" id="Slide3" />
-                  <label for="Slide3" id="s3"></label>
-                  <input type="radio" name="slide" class="control" id="Slide4" />
-                  <label for="Slide4" id="s4"></label>
-                  <div class="overflow-wrapper">
-                    <a class="slide" href=""><img src="https://cdn.pixabay.com/photo/2021/10/20/14/01/bull-6726185_960_720.jpg" alt="highland cow" /></a>
-                    <a class="slide" href=""><img src="https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_960_720.jpg" alt="tractor" /></a>
-                    <a class="slide" href=""><img src="https://cdn.pixabay.com/photo/2016/11/13/21/46/sheep-1822137_960_720.jpg" alt="nosey sheep"/></a>
-                    <a class="slide" href=""><img src="https://cdn.pixabay.com/photo/2021/05/27/20/53/field-6289253_960_720.jpg" alt="field" /></a>
-                  </div>
-                </div>
-              </div>
-              <script  src="./script.js"></script>
+
+      
+			<div class="picContainer">
+				<!--java script image slider-->
+				<div id="info"></div>
+				<div id="image1" class="img">
+				  <img src="https://cdn.pixabay.com/photo/2019/12/05/10/27/countryside-4674764_960_720.jpg" />
+				</div>
+				<div id="image2" class="img">
+				  <img src="https://cdn.pixabay.com/photo/2014/07/06/17/20/tractor-385681_960_720.jpg" />
+				</div>
+				<div id="image3" class="img">
+				  <img src="https://cdn.pixabay.com/photo/2016/11/13/21/46/sheep-1822137_960_720.jpg" />
+				</div>
+				<div id="image4" class="img">
+				  <img src="https://cdn.pixabay.com/photo/2015/05/15/11/06/farmhouse-768177_960_720.jpg" />
+				</div>
+				<div class="left" onclick="left()"></div>
+				<div class="right" onclick="right()"></div>
+				<div class="dots">
+				  <div class="dot a1"></div>
+				  <div class="dot a2"></div>
+				  <div class="dot a3"></div>
+				  <div class="dot a4"></div>
+				</div>
+			  </div>
+			  <script src="js/slider.js"></script>
+
+
 
 		<!-- <img src="images/background.jpg" id="background" alt="the farmhouse">  -->
 
@@ -107,7 +117,7 @@
 	
 	<footer id="footer"><!-- start of footer -->
 	
-         <center><p>&copy; Gary Duffner  <script type="text/javascript">document.write( new Date().getFullYear() );</script></center>
+         <p>&copy; Gary Duffner  <script type="text/javascript">document.write( new Date().getFullYear() );</script>
 	
 	</footer><!--end of footer -->
 </html><!-- end of html -->
