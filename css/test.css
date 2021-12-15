@@ -14,8 +14,8 @@ body {
 }
 #nav {
 
-    position: sticky;
-    z-index:99;
+    position: fixed;
+    z-index: 99;
     top: 13vh;
     left: 2vw;
     
@@ -63,7 +63,13 @@ body {
         visibility: hidden;
       }
     #navitems { display: none; }
-    #nav input:checked ~ #navitems { display: block; background-color: whitesmoke;}
+    #nav input:checked ~ #navitems { 
+      
+      display: block; 
+      background-color: whitesmoke; 
+      border: solid white 2px; 
+      border-radius:8px;
+    }
   
 .collegelogo {
  position: fixed;

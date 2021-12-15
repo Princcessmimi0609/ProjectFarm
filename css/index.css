@@ -62,9 +62,14 @@ body {
     input[type=checkbox] {
         visibility: hidden;
       }
-    #navitems { display: none; }
-    #nav input:checked ~ #navitems { display: block; background-color: whitesmoke;}
-  
+      #navitems { display: none; }
+      #nav input:checked ~ #navitems { 
+        
+        display: block; 
+        background-color: whitesmoke; 
+        border: solid white 2px; 
+        border-radius:8px;
+      }
 .collegelogo {
  position: fixed;
  right: 1vw;
