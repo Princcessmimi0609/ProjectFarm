@@ -43,6 +43,13 @@ body {
       text-shadow: 2px 2px dodgerblue;
       
     }
+
+    #navitems a:hover {
+        background-image: linear-gradient(to top , aliceblue, dodgerblue);
+      }
+      #navitems a.active {
+        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue);
+      }
    
     /* (B) SHOW HAMBURGER ICON */
     #nav label { 
@@ -74,8 +81,9 @@ body {
       border: solid aliceblue 2px; 
       border-radius:8px;
     }
-
     
+
+
 .collegelogo {
  position: fixed;
  right: 1vw;
