@@ -14,8 +14,8 @@ body {
 }
 #nav {
 
-    position: sticky;
-    z-index:99;
+    position: fixed;
+    z-index: 99;
     top: 13vh;
     left: 2vw;
     
@@ -37,8 +37,9 @@ body {
       height: 4vh;
       text-decoration: none;
       font-size: 1.5vw;
-      background-color: aliceblue;
-      color: dodgerblue;
+      background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
+      color: aliceblue;
+      text-shadow: 2px 2px dodgerblue;
       
     }
    
@@ -52,6 +53,8 @@ body {
       display: inline-block; 
       color: white;
       background: dodgerblue;
+      border: solid aliceblue 2px;
+      border-radius: 8px;
       font-family: tahoma;
       font-style:normal;
       font-size: 1.5vw;
@@ -62,14 +65,15 @@ body {
     input[type=checkbox] {
         visibility: hidden;
       }
-      #navitems { display: none; }
-      #nav input:checked ~ #navitems { 
-        
-        display: block; 
-        background-color: whitesmoke; 
-        border: solid white 2px; 
-        border-radius:8px;
-      }
+    #navitems { display: none; }
+    #nav input:checked ~ #navitems { 
+
+      display: block; 
+      background-image: linear-gradient(to top right, aliceblue, dodgerblue);
+      border: solid aliceblue 2px; 
+      border-radius:8px;
+    }
+  
 .collegelogo {
  position: fixed;
  right: 1vw;

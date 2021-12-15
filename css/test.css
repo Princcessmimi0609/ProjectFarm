@@ -14,12 +14,12 @@ body {
 }
 #nav {
 
-    position: fixed;
-    z-index: 99;
-    top: 13vh;
-    left: 2vw;
-    
-    
+  position: fixed;
+  z-index: 99;
+  top: 13vh;
+  left: 2vw;
+  
+  
 
 
 }
@@ -27,49 +27,52 @@ body {
 
 
 
-    #navitems a {
-      position: sticky;
-      box-sizing: border-box;
-      display: block;
-      border: 2px solid dodgerblue;
-      border-radius: 8px;
-      width: 10vw;
-      height: 4vh;
-      text-decoration: none;
-      font-size: 1.5vw;
-      background-color: aliceblue;
-      color: dodgerblue;
-      
+  #navitems a {
+    position: sticky;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid dodgerblue;
+    border-radius: 8px;
+    width: 10vw;
+    height: 4vh;
+    text-decoration: none;
+    font-size: 1.5vw;
+    background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
+    color: aliceblue;
+    text-shadow: 2px 2px dodgerblue;
+    
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #nav label { 
+    position: fixed;
+    top: 5vh;
+    left: 1vw;
+    width: 1.5vw;
+    height: 3vh;
+    display: inline-block; 
+    color: white;
+    background: dodgerblue;
+    border: solid aliceblue 2px;
+    border-radius: 8px;
+    font-family: tahoma;
+    font-style:normal;
+    font-size: 1.5vw;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  input[type=checkbox] {
+      visibility: hidden;
     }
-   
-    /* (B) SHOW HAMBURGER ICON */
-    #nav label { 
-      position: fixed;
-      top: 5vh;
-      left: 1vw;
-      width: 1.5vw;
-      height: 3vh;
-      display: inline-block; 
-      color: white;
-      background: dodgerblue;
-      font-family: tahoma;
-      font-style:normal;
-      font-size: 1.5vw;
-      padding: 10px;
-    }
-  
-    /* (C) TOGGLE SHOW/HIDE MENU */
-    input[type=checkbox] {
-        visibility: hidden;
-      }
-    #navitems { display: none; }
-    #nav input:checked ~ #navitems { 
-      
-      display: block; 
-      background-color: whitesmoke; 
-      border: solid white 2px; 
-      border-radius:8px;
-    }
+  #navitems { display: none; }
+  #nav input:checked ~ #navitems { 
+
+    display: block; 
+    background-image: linear-gradient(to top right, aliceblue, dodgerblue);
+    border: solid aliceblue 2px; 
+    border-radius:8px;
+  }
   
 .collegelogo {
  position: fixed;
