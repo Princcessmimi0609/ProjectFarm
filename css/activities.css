@@ -53,21 +53,21 @@ body {
    
     /* (B) SHOW HAMBURGER ICON */
     #nav label { 
-      position: fixed;
-      top: 5vh;
-      left: 1vw;
-      width: 1.5vw;
-      height: 3vh;
-      display: inline-block; 
-      color: white;
-      background: dodgerblue;
-      border: solid aliceblue 2px;
-      border-radius: 8px;
-      font-family: tahoma;
-      font-style:normal;
-      font-size: 1.5vw;
-      padding: 10px;
-    }
+        position: fixed;
+        top: 5vh;
+        left: 1vw;
+        width: 1.5vw;
+        height: 3vh;
+        display: inline-block; 
+        color: dodgerblue;
+        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue, dodgerblue);
+        border: solid aliceblue 2px;
+        border-radius: 8px;
+        font-family: tahoma;
+        font-style:normal;
+        font-size: 1.5vw;
+        padding: 10px;
+      }
   
     /* (C) TOGGLE SHOW/HIDE MENU */
     input[type=checkbox] {
