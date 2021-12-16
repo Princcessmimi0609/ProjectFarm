@@ -1,6 +1,7 @@
 html
 body {
-  width: 1vw;
+  width: 100vw;
+  background-image: linear-gradient(to bottom , dodgerblue, aliceblue);
   overflow-x: hidden;
 }
 
@@ -98,8 +99,46 @@ body {
     width: 20vw;
     height: 20vh;
     transform: translate(50%, 3%);
+  
    
-   
+   }
+
+#map {
+
+position: fixed;    
+left: 1vw;
+top: 18vh;
+height :75vh;
+width : 70vw;
+border: dodgerblue solid 2px;
+border-radius: 8px;
+
+
+   }
+
+   #locationtext {
+ 
+  position: fixed;
+  right: 1vw;
+  top: 18vh;
+  height: 75vh;
+  width: 25vw;
+  border: dodgerblue solid 2px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top  , rgb(228, 110, 15), aliceblue)
+
+   }
+
+   #loctext {
+
+  margin: auto auto;
+  padding-left: 5px;
+  font-family: tahoma;
+  font-size: 1.9vw;
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+
+
    }
 
    #footer {
