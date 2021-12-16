@@ -40,20 +40,23 @@
 		
 		<main><!-- start of main content -->
 
-		 
+		 <div id="formwrapper"
 
-	        <div id ="contactform">
+	        
 
 				<form action="action_page.php">
 
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
-				
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-				
-					<label for="country">Country</label>
+					<form id="contactform">
+
+						
+						 <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+						  <input type="text" id="email" name="email" placeholder="Your email address..">
+
+						  
+					
+
 					<select id="country" name="country">
+
 					  <option value="Scotland">Scotland</option>
 					  <option value="England">England</option>
 					  <option value="Wales">Wales</option>
@@ -62,14 +65,16 @@
 					  <option value="World">Rest of the World</option>
 					</select>
 				
-					<label for="subject">Subject</label>
-					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-				
-					<input type="submit" value="Submit">
-				
+					
+					<textarea id="subject" name="subject" placeholder="Your Message" style="height:45%"></textarea>
+					<input id="actionbutton" type="submit" value="Send" onclick="WriteToFile(passForm)">                       
+					
+					<input id="clearform"  type ="reset" value="Clear Form">
+					<!--wont save as we are not using a webserver -->
+					<!-- could define a path and save it, but it wouldn't be correct on another pc -->
 				  </form>
 
-			</div>	
+				</div>
 
 		<!-- <img src="images/background.jpg" id="background" alt="the farmhouse">  -->
 
