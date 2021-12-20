@@ -1,11 +1,8 @@
-html
+html ,
 body {
   width: 100vw;
-  background-image: url("../images/contact.jpg");
-  background-repeat: no-repeat;
-  background-size:contain;
+  background-image: linear-gradient(to bottom , rgb(228, 110, 15), aliceblue);
   overflow-x: hidden;
-  color: dodgerblue;
 }
 
 .banner {
@@ -72,6 +69,8 @@ body {
         font-size: 1.5vw;
         padding: 10px;
       }
+
+      
   
     /* (C) TOGGLE SHOW/HIDE MENU */
     input[type=checkbox] {
@@ -104,6 +103,17 @@ body {
     transform: translate(50%, 3%);
    
    
+   }
+
+   .questionmark {
+     
+    position: fixed;
+    left: 1vw;
+    top: 18vh;
+    width :74vw;
+    height: 70vh;
+    border-radius: 8px;
+
    }
 
    #formwrapper {
