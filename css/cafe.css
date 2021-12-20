@@ -1,6 +1,7 @@
 html
 body {
-  width: 1vw;
+  width: 100vw;
+  background-image: linear-gradient(to bottom , rgb(228, 110, 15), aliceblue);
   overflow-x: hidden;
 }
 
@@ -103,21 +104,117 @@ body {
    }
 
    #cafe {
-
-   color: dodgerblue;
-
+   position: fixed;
+   color: rgb(228, 110, 15);
+   left: 1vw;
+   top: 18vh;
+   width: 65vw;
+   height: 75vh;
+   border: dodgerblue solid 2px;
+   border-radius: 8px;
+   background-image:url("../images/coffee.jpg");
+   background-size:cover;
+   background-repeat: no-repeat;
    }
 
    #cafehead {
 
-   color:aliceblue;
+   position: fixed;
+   left: 50vw;
+   top: 20.5vh;
+   width:15vw;
+   height:70vh;
+   padding: 2px 2px;
+   font-family:tahoma;
+   font-size: 2vw;
+   justify-content:center;
+   text-align: center;
+   color:rgb(228, 110, 15);
+   text-shadow: 2px 2px dodgerblue;
+   border: dodgerblue solid 2px;
+   border-radius: 8px;
+   background-image: linear-gradient(to top , rgb(228, 110, 15), aliceblue);
+   }
+
+   #cafetext {
+
+   
+    position: fixed;
+    left: 51vw;
+    top: 27vh;
+    width:13vw;
+    height:38vh;
+    padding: 2px 2px;
+    font-family:tahoma;
+    font-size: 1.5vw;
+    justify-content:center;
+    opacity: 100%;
+    text-align: center;
+    color: dodgerblue;
+    text-shadow: 2px 2px aliceblue;
+    
+
+   }
+   #haggis {
+
+    width: 100% ;
+    border: 2px ;
+    border-radius: 8px;
+   }
+
+   #opentimes {
+
+    position: fixed;
+    left: 51vw;
+    bottom: 29vh;
+    padding: 5px 5px;
+    font-family:tahoma;
+    font-size: 1.5vw;
+    justify-content:left;
+    text-align: left;
+    text-shadow: 2px 2px dodgerblue;
+    color: aliceblue;
+
+   }
+
+   #days {
+
+    position: fixed;
+    left: 51vw;
+    bottom: 8vh;
+    padding: 5px 5px;
+    font-family:tahoma;
+    font-size: 1vw;
+    justify-content:center;
+    text-align: left;
+    text-shadow: 2px 2px dodgerblue;
+    color: aliceblue;
+
+
+
+   }
+
+   #hours {
+
+    position: fixed;
+    left: 58vw;
+    bottom: 8vh;
+    padding: 5px 5px;
+    font-family:tahoma;
+    font-size: 1vw;
+    justify-content:center;
+    text-align: center;
+    text-shadow: 2px 2px dodgerblue;
+    color: aliceblue;
+
+
 
    }
 
    #slider {
     position: fixed;
     top: 18vh;
-    left: 0.5vw;
+    right: 0.5vw;
     width: 30vw;
     height: 75vh;
     border: dodgerblue solid 2px;
@@ -172,6 +269,16 @@ body {
   #slider #prev:hover, #slider #next:hover {
     background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 0;
+  }
+  
+  #over21 {
+    position: fixed;
+    opacity: 75%;
+    width: 15%;
+    height:15%;
+    bottom: 33vh;
+    left: 51vw;
+
   }
   
 

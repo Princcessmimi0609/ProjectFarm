@@ -1,7 +1,7 @@
 html
 body {
   width: 100vw;
-  background-image: linear-gradient(to bottom , dodgerblue, aliceblue);
+  background-image: linear-gradient(to bottom , rgb(228, 110, 15), aliceblue);
   overflow-x: hidden;
 }
 
