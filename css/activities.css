@@ -1,6 +1,7 @@
 html
 body {
-  width: 1vw;
+  width: 100vw;
+  background-image: linear-gradient(to bottom , rgb(228, 110, 15), aliceblue);
   overflow-x: hidden;
 }
 
@@ -103,6 +104,87 @@ body {
    
    
    }
+
+   /* Style the video: 100% width and height to cover the entire window */
+#tree {
+  position: fixed;
+  top : 20vh;
+  left: 1vw;
+  width: 98vw;
+  
+  color: dodgerblue;
+  border:  aliceblue solid 2px;
+  border-radius: 8px;
+  
+ 
+}
+
+#heading {
+ font-family:tahoma;
+ font-size:3vw;
+
+}
+
+#subheading {
+  font-family:tahoma;
+  font-size:2vw;
+  left:0.5vw;
+
+
+}
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  top: 20vh;
+  left: 1vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+  width: 96%;
+  height: 71%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+ul {
+
+  color:rgb(228, 110, 15);
+  font-size: 1.5vw;
+  
+}
+
+a {
+
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  position: fixed;
+  bottom: 6vh;
+  left:48vw;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue);
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-image: linear-gradient(to top right , rgb(228, 110, 15), dodgerblue);
+  color: aliceblue;
+  text-shadow: 2px 2px dodgerblue;
+  
+}
+
 
    #footer {
   

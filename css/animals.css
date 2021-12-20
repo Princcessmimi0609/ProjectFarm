@@ -1,0 +1,144 @@
+html
+body {
+  width: 100vw;
+  background-image: linear-gradient(to bottom , rgb(228, 110, 15), aliceblue);
+  overflow-x: hidden;
+}
+
+.banner {
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    height: 15vh;
+    width: 100vw;
+
+}
+
+#return {
+
+  position: fixed;
+  left: 1vw;
+  top: 5vh;
+  width: 12vw;
+  height: 6vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgb(228, 110, 15), aliceblue,
+      dodgerblue
+    );
+  color: dodgerblue;
+  font-family:tahoma;
+  font-size: 1vw;
+  text-shadow: 2px 2px aliceblue;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
+  
+.collegelogo {
+ position: fixed;
+ right: 1vw;
+ top: 2vh;
+ width: 10vw;
+ height: 12vh;
+
+}
+
+.logo {
+    position: fixed;
+    right: 50vw;
+    top: 1vh;
+    width: 20vw;
+    height: 20vh;
+    transform: translate(50%, 3%);
+   
+   
+   }
+
+
+
+
+
+#slider {
+  position: fixed;
+  top: 18vh;
+  left: 0.5vw;
+  width: 99vw;
+  height: 75vh;
+  border: dodgerblue solid 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+#slider ul li img{
+  width: 99vw;
+  height: 75vh;
+}
+
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+#footer {
+  
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  bottom: 0vh;
+  left: 0vw;
+  background-image: linear-gradient(to bottom, aliceblue, dodgerblue);
+  opacity:100%;
+  overflow: hidden;
+
+}
+
+#footertext {
+
+  display: flex;
+  color: aliceblue; 
+  font-size: 2vh;
+  text-shadow: 2px 2px dodgerblue;
+  left: 50%;
+  transform: translate(50%);
+}

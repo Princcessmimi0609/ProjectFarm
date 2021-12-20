@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Gary Duffner">
 		<meta name="description" content="College Project">
-		<link rel="stylesheet" href = "css/index.css">
+		<link rel="stylesheet" href = "css/activities.css">
 		<img class ="banner" src = "images/banner.jpg" alt="Site Banner">
 		<title>Things to Do</title>	
 		
@@ -40,9 +40,44 @@
 		
 		<main><!-- start of main content -->
 		
+			<!-- The video -->
+    <video autoplay muted loop id="tree">
+	<source src="videos/trees.mp4" type="video/mp4" alt="fun video">
+    </video>
+  
+    <!-- Optional: some overlay text to describe the video -->
+     
+	<div class="content">
+		<p id="heading">Theres a whole host of family actives here at Carburgh Farm </p>
+			<p id ="subheading">These include : </p>
+
+		<p><ul>
+                  <li>
+				   <a href="animals.html">Children Playground & Petting Zoo</a>
+				  </li>
+				  <li>
+					<a href="https://www.scotborders.gov.uk/directory_record/7468/paths_around_selkirk" target="_blank">Walks in the Countryside</a> 
+				</li>
+				<li>
+				    <a href="http://www.ettrickandyarrow.co.uk/activities/fishing.html" target="_blank">Fishing (Permits available at our shop)</a>
+				</li>
+				<li>
+					<a href="cafe.html">Indulge in our cafes delicacies</a> 
+				</li>
+				<li>
+					<a href="shop.html">Shop our homemade produce in our gift shop.</a>
+				</li>
+				
+		</ul></p>
+		<!-- Use a button to pause/play the video with JavaScript -->
+		<button id="myBtn" onclick="myVideo()">Pause Video</button>
+	  </div>
+    
+	  <script src="js/video.js"></script>
+	
 	
 
-		<!-- <img src="images/background.jpg" id="background" alt="the farmhouse">  -->
+		
 
           <!-- college logo -->
 		  <a href="https://www.glasgowclyde.ac.uk/" target="_blank">
