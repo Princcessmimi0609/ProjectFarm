@@ -110,7 +110,7 @@ body {
    top: 18vh;
    width: 65vw;
    height: 75vh;
-   border: dodgerblue solid 2px;
+   border: aliceblue solid 2px;
    border-radius: 8px;
    background-image:url("../images/coffee.jpg");
    background-size:cover;
@@ -131,7 +131,7 @@ body {
    text-align: center;
    color:rgb(228, 110, 15);
    text-shadow: 2px 2px dodgerblue;
-   border: dodgerblue solid 2px;
+   border: aliceblue solid 2px;
    border-radius: 8px;
    background-image: linear-gradient(to top , rgb(228, 110, 15), aliceblue);
    }
@@ -217,7 +217,7 @@ body {
     right: 0.5vw;
     width: 30vw;
     height: 75vh;
-    border: dodgerblue solid 2px;
+    border: aliceblue solid 2px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);

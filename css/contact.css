@@ -111,7 +111,8 @@ body {
     left: 1vw;
     top: 18vh;
     width :74vw;
-    height: 70vh;
+    height: 75vh;
+    border: 2px solid aliceblue;
     border-radius: 8px;
 
    }
@@ -187,7 +188,7 @@ body {
     background-color: aliceblue;
     width: 25%; /* Full width */
     padding: 1vh; /* Some padding */
-    border: 1px solid dodgerblue; /* border color */
+    border: 1px solid aliceblue; /* border color */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 2px; /* Add a top margin */
@@ -200,7 +201,7 @@ body {
     color: dodgerblue;
     width: 25%; /* Full width */
     padding: 1vh; /* Some padding */
-    border: 1px solid dodgerblue; /*  border color */
+    border: 1px solid aliceblue; /*  border color */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 2px; /* Add a top margin */

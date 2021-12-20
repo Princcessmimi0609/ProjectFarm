@@ -110,7 +110,7 @@ left: 1vw;
 top: 18vh;
 height :75vh;
 width : 70vw;
-border: dodgerblue solid 2px;
+border: aliceblue solid 2px;
 border-radius: 8px;
 
 
@@ -123,7 +123,7 @@ border-radius: 8px;
   top: 18vh;
   height: 75vh;
   width: 25vw;
-  border: dodgerblue solid 2px;
+  border: aliceblue solid 2px;
   border-radius: 8px;
   background-image: linear-gradient(to top  , rgb(228, 110, 15), aliceblue)
 
