@@ -100,7 +100,7 @@ input[type="checkbox"] {
   color: rgb(228, 110, 15);
   right: 1vw;
   top: 18vh;
-  width: 65vw;
+  width: 48vw;
   height: 75vh;
   border: aliceblue solid 2px;
   border-radius: 8px;
@@ -191,7 +191,7 @@ input[type="checkbox"] {
   position: fixed;
   top: 18vh;
   left: 0.5vw;
-  width: 30vw;
+  width: 48vw;
   height: 75vh;
   border: aliceblue solid 2px;
   border-radius: 8px;
@@ -203,10 +203,10 @@ input[type="checkbox"] {
   position: relative;
   list-style: none;
   height: 100%;
-  width: 3000%;
+  width: 4800%;
   padding: 0;
   margin: 0;
-  transition: all 750ms ease;
+  transition: all 450ms ease;
   left: 0;
 }
 #slider ul li {
@@ -216,7 +216,7 @@ input[type="checkbox"] {
   float: left;
 }
 #slider ul li img {
-  width: 30vw;
+  width: 48vw;
   height: 75vh;
 }
 
