@@ -1,128 +1,280 @@
-html ,
+html,
 body {
   width: 100vw;
-  background-image: linear-gradient(to bottom , rgb(228, 110, 15), aliceblue);
+  background-image: linear-gradient(to bottom, rgb(228, 110, 15), aliceblue);
   overflow-x: hidden;
 }
 
 .banner {
-    position: fixed;
-    top: 0vh;
-    left: 0vw;
-    height: 15vh;
-    width: 100vw;
-
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  height: 15vh;
+  width: 100vw;
 }
 
 #nav {
-
-    position: fixed;
-    z-index: 99;
-    top: 13vh;
-    left: 2vw;
-    
-    
-
-
+  position: fixed;
+  z-index: 99;
+  top: 13vh;
+  left: 2vw;
 }
 
+#navitems a {
+  position: sticky;
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+  width: 10vw;
+  height: 4vh;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
+  color: aliceblue;
+  text-shadow: 2px 2px dodgerblue;
+}
 
+#navitems a:hover {
+  background-image: linear-gradient(to top, aliceblue, dodgerblue);
+}
+#navitems a.active {
+  background-image: linear-gradient(to top right, rgb(228, 110, 15), aliceblue);
+}
 
+/* (B) SHOW HAMBURGER ICON */
+#nav label {
+  position: fixed;
+  top: 5vh;
+  left: 1vw;
+  width: 1.5vw;
+  height: 3vh;
+  display: inline-block;
+  color: dodgerblue;
+  background-image: linear-gradient(
+    to top right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  border: solid aliceblue 2px;
+  border-radius: 8px;
+  font-family: tahoma;
+  font-style: normal;
+  font-size: 1.5vw;
+  padding: 10px;
+}
 
-    #navitems a {
-      position: sticky;
-      box-sizing: border-box;
-      display: block;
-      border: 2px solid dodgerblue;
-      border-radius: 8px;
-      width: 10vw;
-      height: 4vh;
-      text-decoration: none;
-      font-size: 1.5vw;
-      background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
-      color: aliceblue;
-      text-shadow: 2px 2px dodgerblue;
-      
-    }
+/* (C) TOGGLE SHOW/HIDE MENU */
+input[type="checkbox"] {
+  visibility: hidden;
+}
+#navitems {
+  display: none;
+}
+#nav input:checked ~ #navitems {
+  display: block;
+  background-image: linear-gradient(to top right, aliceblue, dodgerblue);
+  border: solid aliceblue 2px;
+  border-radius: 8px;
+}
 
-    #navitems a:hover {
-        background-image: linear-gradient(to top , aliceblue, dodgerblue);
-      }
-      #navitems a.active {
-        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue);
-      }
-   
-    /* (B) SHOW HAMBURGER ICON */
-    #nav label { 
-        position: fixed;
-        top: 5vh;
-        left: 1vw;
-        width: 1.5vw;
-        height: 3vh;
-        display: inline-block; 
-        color: dodgerblue;
-        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue, dodgerblue);
-        border: solid aliceblue 2px;
-        border-radius: 8px;
-        font-family: tahoma;
-        font-style:normal;
-        font-size: 1.5vw;
-        padding: 10px;
-      }
-  
-    /* (C) TOGGLE SHOW/HIDE MENU */
-    input[type=checkbox] {
-        visibility: hidden;
-      }
-    #navitems { display: none; }
-    #nav input:checked ~ #navitems { 
-
-      display: block; 
-      background-image: linear-gradient(to top right, aliceblue, dodgerblue);
-      border: solid aliceblue 2px; 
-      border-radius:8px;
-    }
-  
 .collegelogo {
- position: fixed;
- right: 1vw;
- top: 2vh;
- width: 10vw;
- height: 12vh;
-
+  position: fixed;
+  right: 1vw;
+  top: 2vh;
+  width: 10vw;
+  height: 12vh;
 }
 
 .logo {
-    position: fixed;
-    right: 50vw;
-    top: 1vh;
-    width: 20vw;
-    height: 20vh;
-    transform: translate(50%, 3%);
-   
-   
-   }
+  position: fixed;
+  right: 50vw;
+  top: 1vh;
+  width: 20vw;
+  height: 20vh;
+  transform: translate(50%, 3%);
+}
+#cafe {
+  position: fixed;
+  color: rgb(228, 110, 15);
+  right: 1vw;
+  top: 18vh;
+  width: 65vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: url("../images/shop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-   #footer {
-  
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 5vh;
-    bottom: 0vh;
-    left: 0vw;
-    background-image: linear-gradient(to bottom, aliceblue, dodgerblue);
-    opacity:100%;
-    overflow: hidden;
-  
-  }
-  
-  #footertext {
-  
-    display: flex;
-    color: aliceblue; 
-    font-size: 2vh;
-    text-shadow: 2px 2px dodgerblue;
-    left: 50%;
-    transform: translate(50%);
-  }
+#cafehead {
+  position: fixed;
+  right: 2.5vw;
+  top: 20.5vh;
+  width: 15vw;
+  height: 70vh;
+  padding: 2px 2px;
+  font-family: tahoma;
+  font-size: 2vw;
+  justify-content: center;
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-shadow: 2px 2px dodgerblue;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, rgb(228, 110, 15), aliceblue);
+}
+
+#cafetext {
+  position: fixed;
+  right: 3.5vw;
+  top: 27vh;
+  width: 13vw;
+  height: 38vh;
+  padding: 2px 2px;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  justify-content: center;
+  opacity: 100%;
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-shadow: 2px 2px dodgerblue;
+}
+#eggs {
+  width: 100%;
+  border: 2px;
+  border-radius: 8px;
+}
+
+#opentimes {
+  position: fixed;
+  right: 6vw;
+  bottom: 29vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  justify-content: left;
+  text-align: left;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#days {
+  position: fixed;
+  right: 11vw;
+  bottom: 8vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1vw;
+  justify-content: center;
+  text-align: left;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#hours {
+  position: fixed;
+  right: 3.5vw;
+  bottom: 8vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1vw;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#slider {
+  position: fixed;
+  top: 18vh;
+  left: 0.5vw;
+  width: 30vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 3000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+#slider ul li img {
+  width: 30vw;
+  height: 75vh;
+}
+
+#slider #prev,
+#slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+#over21 {
+  position: fixed;
+  opacity: 75%;
+  width: 15%;
+  height: 15%;
+  bottom: 33vh;
+  right: 2.5vw;
+}
+
+#footer {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  bottom: 0vh;
+  left: 0vw;
+  background-image: linear-gradient(to bottom, aliceblue, dodgerblue);
+  opacity: 100%;
+  overflow: hidden;
+}
+
+#footertext {
+  display: flex;
+  color: aliceblue;
+  font-size: 2vh;
+  text-shadow: 2px 2px dodgerblue;
+  left: 50%;
+  transform: translate(50%);
+}
