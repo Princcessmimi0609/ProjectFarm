@@ -258,6 +258,22 @@ input[type="checkbox"] {
   right: 2.5vw;
 }
 
+#scroll {
+  top:25vh;
+  left:52vw;
+  width: 28vw;
+  height: 40vh;
+  position: fixed;
+  font: tahoma;
+  font-size: 3vw;
+  border-radius: 8px;
+  color: aliceblue;
+  text-shadow: 2px 2px rgb(228, 110, 15);
+ 
+ 
+ 
+ }
+
 #footer {
   display: block;
   position: fixed;
