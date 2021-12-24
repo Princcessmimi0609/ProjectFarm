@@ -280,22 +280,43 @@ body {
     left: 51vw;
 
   }
-  
-  #scroll {
+
+   .wrapper {
+    display: flex;
+    
     top:25vh;
-    left:2vw;
-    width: 48vw;
+    left:2.5vw;
+    width: 50vw;
     height: 40vh;
     position: fixed;
-    font: tahoma;
-    font-size: 3vw;
-    border-radius: 8px;
-    color: aliceblue;
-    text-shadow: 2px 2px dodgerblue;
-   
-   
-   
-   }
+    margin: 0 auto;
+    /* perspective gives us a 3d space within the element to work with*/
+    /* perspective also has the effect of pushing the content "down" */
+    perspective: 450px;
+  }
+
+   .scroll-text {
+    color: dodgerblue;
+    text-shadow: 2px 2px rgb(228, 110, 15);
+    font-size: 2vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 60s linear forwards;
+    -webkit-animation: scroll 60s linear infinite;
+  }
+  h1,h2 {
+    text-align: center;
+  }
+  
+  @keyframes scroll {
+    from { top: 0; transform: translateZ(0) rotateX(20deg); }
+    to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg); }
+    
+  }
+  
+  
 
    #footer {
   
