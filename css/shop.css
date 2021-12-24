@@ -165,7 +165,7 @@ input[type="checkbox"] {
 #days {
   position: fixed;
   right: 11vw;
-  bottom: 8vh;
+  bottom: 10vh;
   padding: 5px 5px;
   font-family: tahoma;
   font-size: 1vw;
@@ -178,7 +178,7 @@ input[type="checkbox"] {
 #hours {
   position: fixed;
   right: 3.5vw;
-  bottom: 8vh;
+  bottom: 10vh;
   padding: 5px 5px;
   font-family: tahoma;
   font-size: 1vw;
