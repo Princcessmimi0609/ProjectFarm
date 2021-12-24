@@ -1,8 +1,9 @@
 html,
 body {
   width: 100vw;
+  height: 100vh;
   background-image: linear-gradient(to bottom, rgb(228, 110, 15), aliceblue);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .banner {
@@ -172,7 +173,7 @@ input[type="checkbox"] {
 #days {
   position: fixed;
   right: 22vw;
-  bottom: 7vh;
+  bottom: 15vh;
   padding: 5px 5px;
   font-family: tahoma;
   font-size: 2vw;
@@ -185,7 +186,7 @@ input[type="checkbox"] {
 #hours {
   position: fixed;
   right: 8vw;
-  bottom: 7vh;
+  bottom: 15vh;
   padding: 5px 5px;
   font-family: tahoma;
   font-size: 2vw;
