@@ -139,8 +139,8 @@ body {
   top: 20vh;
   left: 1vw;
   background: rgba(0, 0, 0, 0.5);
-  color: dodgerblue;
-  text-shadow: 2px 2px aliceblue;
+  color: aliceblue;
+  text-shadow: 2px 2px rgb(228, 110, 15);
   width: 96%;
   height: 71%;
   padding: 20px;
@@ -150,6 +150,7 @@ body {
 ul {
 
   color:rgb(228, 110, 15);
+  font-family:tahoma;
   font-size: 1.5vw;
   
 }
@@ -157,7 +158,7 @@ ul {
 a {
 
   text-decoration: none;
-  color: dodgerblue;
+  color: aliceblue;
   font-size: 1.5vw;
   text-decoration: none;
 }
