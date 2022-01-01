@@ -53,7 +53,7 @@ body {
         background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue);
       }
    
-    /* (B) SHOW HAMBURGER ICON */
+    /* SHOW HAMBURGER ICON */
     #nav label { 
         position: fixed;
         top: 5vh;
@@ -71,7 +71,7 @@ body {
         padding: 10px;
       }
   
-    /* (C) TOGGLE SHOW/HIDE MENU */
+    /* TOGGLE SHOW/HIDE MENU */
     input[type=checkbox] {
         visibility: hidden;
       }
