@@ -58,12 +58,20 @@ body {
     aliceblue,
     dodgerblue
   );
-  border: solid aliceblue 2px;
+  border: solid aliceblue 0px;
   border-radius: 8px;
   font-family: tahoma;
   font-style: normal;
   font-size: 1.5vw;
   padding: 10px;
+}
+
+#nav label:hover {
+         
+  cursor: pointer;
+  border: solid aliceblue 2px;
+
+
 }
 
 /* TOGGLE SHOW/HIDE MENU */
@@ -191,7 +199,7 @@ input[type="checkbox"] {
 #slider {
   position: fixed;
   top: 18vh;
-  left: 0.5vw;
+  left: 1vw;
   width: 48vw;
   height: 75vh;
   border: aliceblue solid 2px;
@@ -326,7 +334,7 @@ h1,h2 {
   font-family: tahoma;
   font-size: 20px;
   color: dodgerblue;
-  border: 2px solid dodgerblue;
+  border: 0px solid dodgerblue;
   border-radius: 8px;
   background-image: linear-gradient(
     to top right,

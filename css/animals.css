@@ -31,7 +31,16 @@ body {
   font-size: 1vw;
   text-shadow: 2px 2px aliceblue;
   cursor: pointer;
+  border: 0px solid aliceblue;
   border-radius: 8px;
+}
+
+#return:hover {
+         
+  cursor: pointer;
+  border: solid aliceblue 2px;
+
+
 }
 
 .collegelogo {
@@ -54,7 +63,7 @@ body {
 #slider {
   position: fixed;
   top: 18vh;
-  left: 0.5vw;
+  left: 1vw;
   width: 65vw;
   height: 75vh;
   border: aliceblue solid 2px;
@@ -174,7 +183,7 @@ body {
   font-family: tahoma;
   font-size: 20px;
   color: dodgerblue;
-  border: 2px solid dodgerblue;
+  border: 0px solid dodgerblue;
   border-radius: 8px;
   background-image: linear-gradient(
     to top right,

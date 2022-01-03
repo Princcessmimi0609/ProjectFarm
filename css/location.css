@@ -63,12 +63,20 @@ body {
         display: inline-block; 
         color: dodgerblue;
         background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue, dodgerblue);
-        border: solid aliceblue 2px;
+        border: solid aliceblue 0px;
         border-radius: 8px;
         font-family: tahoma;
         font-style:normal;
         font-size: 1.5vw;
         padding: 10px;
+      }
+
+      #nav label:hover {
+         
+        cursor: pointer;
+        border: solid aliceblue 2px;
+
+
       }
   
     /* TOGGLE SHOW/HIDE MENU */
@@ -175,7 +183,7 @@ border-radius: 8px;
     font-family: tahoma;
     font-size: 20px;
     color: dodgerblue;
-    border: 2px solid dodgerblue;
+    border: 0px solid dodgerblue;
     border-radius: 8px;
     background-image: linear-gradient(
       to top right,
