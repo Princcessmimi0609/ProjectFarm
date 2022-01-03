@@ -316,3 +316,48 @@ h1,h2 {
   left: 50%;
   transform: translate(50%);
 }
+
+#socialmedia  {
+
+ 
+  position: fixed;
+  bottom: 1vh;
+  left: 0.5vw;
+  font-family: tahoma;
+  font-size: 20px;
+  color: dodgerblue;
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  overflow: hidden;
+
+
+}
+
+#socialmedia img {
+
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0vw 0vw;
+  width: 3vw;
+  height: 6vh;
+  color: white;
+  border: solid 1px white;
+  align-items: center;
+  font-size: 1vw;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+
+#socialmedia a:hover {
+  background-image: linear-gradient(to top , gold, silver);
+  opacity: 50%;
+}
+
