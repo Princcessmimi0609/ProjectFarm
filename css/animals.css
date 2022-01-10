@@ -174,17 +174,17 @@ body {
   transform: translate(50%);
 }
 
+/* position and configure social media block */
 #socialmedia  {
 
- 
+  display: block;
   position: fixed;
   bottom: 1vh;
   left: 0.5vw;
-  font-family: tahoma;
-  font-size: 20px;
-  color: dodgerblue;
+  height: 6.5vh;
   border: 0px solid dodgerblue;
   border-radius: 8px;
+  text-align:center; /* this centres the socialmedia image block */
   background-image: linear-gradient(
     to top right,
     rgb(228, 110, 15),
@@ -192,13 +192,12 @@ body {
     dodgerblue
   );
   overflow: hidden;
-
-
 }
 
 #socialmedia img {
 
-
+  position: flex;
+  justify-content: center;
   display: inline-block;
   border-radius: 50%;
   padding: 0vw 0vw;
@@ -206,7 +205,6 @@ body {
   height: 3vh;
   color: white;
   border: solid 1px white;
-  align-items: center;
   overflow: hidden;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
@@ -217,6 +215,7 @@ body {
 
   font-family:tahoma;
   font-size: 20px;
+  color: dodgerblue;
   text-align: left;
   text-shadow: 2px 2px aliceblue;
   padding: 2px 2px;
@@ -247,5 +246,4 @@ body {
   background-image: linear-gradient(to top , dodgerblue, aliceblue);
   opacity: 50%;
 }
-
 

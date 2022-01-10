@@ -174,31 +174,30 @@ border-radius: 8px;
     transform: translate(50%);
   }
 
-  #socialmedia  {
+  /* position and configure social media block */
+#socialmedia  {
 
- 
-    position: fixed;
-    bottom: 1vh;
-    left: 0.5vw;
-    font-family: tahoma;
-    font-size: 20px;
-    color: dodgerblue;
-    border: 0px solid dodgerblue;
-    border-radius: 8px;
-    background-image: linear-gradient(
-      to top right,
-      rgb(228, 110, 15),
-      aliceblue,
-      dodgerblue
-    );
-    overflow: hidden;
-  
-  
-  }
-  
+  display: block;
+  position: fixed;
+  bottom: 1vh;
+  left: 0.5vw;
+  height: 6.5vh;
+  border: 0px solid dodgerblue;
+  border-radius: 8px;
+  text-align:center; /* this centres the socialmedia image block */
+  background-image: linear-gradient(
+    to top right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  overflow: hidden;
+}
+
   #socialmedia img {
-  
-  
+
+    position: flex;
+    justify-content: center;
     display: inline-block;
     border-radius: 50%;
     padding: 0vw 0vw;
@@ -206,7 +205,6 @@ border-radius: 8px;
     height: 3vh;
     color: white;
     border: solid 1px white;
-    align-items: center;
     overflow: hidden;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
@@ -217,6 +215,7 @@ border-radius: 8px;
   
     font-family:tahoma;
     font-size: 20px;
+    color: dodgerblue;
     text-align: left;
     text-shadow: 2px 2px aliceblue;
     padding: 2px 2px;
@@ -247,4 +246,3 @@ border-radius: 8px;
     background-image: linear-gradient(to top , dodgerblue, aliceblue);
     opacity: 50%;
   }
-  
