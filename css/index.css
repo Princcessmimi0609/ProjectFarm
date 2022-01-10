@@ -163,7 +163,7 @@ input[type="checkbox"] {
 #slider #prev:hover,
 #slider #next:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  text-shadow: 0;
+  
 }
 #opentimes {
   position: fixed;
@@ -283,7 +283,6 @@ h1,h2 {
 
 #socialmedia img {
 
-  position: flex;
   justify-content: center;
   display: inline-block;
   border-radius: 50%;
