@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Gary Duffner">
 		<meta name="description" content="College Project">
-		<link rel="stylesheet" href = "css/contact.css">
+		<link rel="stylesheet" href = "css/style.css">
 		
 	</head><!-- end of head -->
 	
@@ -44,9 +44,12 @@
        
 		<img class="questionmark" src="images/contact.jpg" alt="question marks">
         <!-- contact form -->
+		
+		
+		
 		 <div id="formwrapper">
-
-					<form id="contactform" action="actionpage.php">
+                    
+					<form id="contactform">
 
 						 <input type="text" id="fname" name="fullname" placeholder="Your full name..">
 						  <input type="text" id="email" name="email" placeholder="Your email address..">
@@ -61,16 +64,18 @@
 					  <option value="World">Rest of the World</option>
 					</select>
 				
-					<textarea id="subject" name="subject" placeholder="Your Message" style="height:45%"></textarea>
-					<input id="actionbutton" type="submit" value="Send" onclick="WriteToFile(passForm)">                       
+					<textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+					<input id="actionbutton" type="submit" value="Send" onclick="myFunction">                       
 					
 					<input id="clearform"  type ="reset" value="Clear Form">
 					<!--wont save as we are not using a webserver -->
 					<!-- could define a path and save it, but it wouldn't be correct on another pc -->
 				  </form>
-
+				  
 				</div>
-
+				
+				<script src="js/form.js"></script>
+				
           <!-- college logo -->
 		  <a href="https://www.glasgowclyde.ac.uk/" target="_blank">
 			<img class="collegelogo" src="images/gcc.png" alt="GCC college logo">

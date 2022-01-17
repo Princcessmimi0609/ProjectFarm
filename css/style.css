@@ -1,0 +1,1238 @@
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(228, 110, 15), aliceblue);
+  overflow: hidden;
+}
+
+.banner {
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    height: 15vh;
+    width: 100vw;
+
+}
+
+#nav {
+
+    position: fixed;
+    z-index: 99;
+    top: 13vh;
+    left: 2vw;
+
+}
+
+    #navitems a {
+		
+      position: sticky;
+      box-sizing: border-box;
+      display: block;
+      border: 2px solid dodgerblue;
+      border-radius: 8px;
+      width: 10vw;
+      height: 4vh;
+      text-decoration: none;
+      font-size: 1.5vw;
+      background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
+      color: aliceblue;
+      text-shadow: 2px 2px dodgerblue;
+      
+    }
+
+    #navitems a:hover {
+        background-image: linear-gradient(to top , aliceblue, dodgerblue);
+      }
+      #navitems a.active {
+        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue);
+      }
+   
+    /* SHOW HAMBURGER ICON */
+	
+    #nav label { 
+	
+        position: fixed;
+        top: 5vh;
+        left: 1vw;
+        width: 1.5vw;
+        height: 3vh; 
+		display: flex;
+        align-items: center;
+        justify-content: center;
+        color: dodgerblue;
+        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue, dodgerblue);
+        border: solid aliceblue 0px;
+        border-radius: 8px;
+        font-family: tahoma;
+        font-style:normal;
+        font-size: 1.5vw;
+        padding: 10px;
+      }
+
+#nav label:hover {
+         
+        cursor: pointer;
+        border: solid aliceblue 2px;
+      }
+	  
+#hamburger {
+	
+	color:red;
+	
+	
+}
+  
+    /* TOGGLE SHOW/HIDE MENU */
+	
+    input[type=checkbox] {
+        visibility: hidden;
+      }
+#navitems { display: none; }
+
+#nav input:checked ~ #navitems { 
+
+      display: block; 
+      background-image: linear-gradient(to top right, aliceblue, dodgerblue);
+      border: solid aliceblue 2px; 
+      border-radius:8px;
+    }
+
+.collegelogo {
+ position: fixed;
+ right: 1vw;
+ top: 2vh;
+ width: 10vw;
+ height: 12vh;
+
+}
+
+.logo {
+    position: fixed;
+    right: 50vw;
+    top: 1vh;
+    width: 20vw;
+    height: 20vh;
+    transform: translate(50%, 3%);
+  
+   
+   }
+   
+#footer {
+  
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    bottom: 0vh;
+    left: 0vw;
+    background-image: linear-gradient(to bottom, aliceblue, dodgerblue);
+    opacity:100%;
+    overflow: hidden;
+  
+  }
+  
+#footertext {
+  
+    display: flex;
+    color: aliceblue; 
+    font-size: 2vh;
+    text-shadow: 2px 2px dodgerblue;
+    left: 50%;
+    transform: translate(50%);
+  }
+
+  /* position and configure social media block */
+#socialmedia  {
+
+  display: block;
+  position: fixed;
+  bottom: 1vh;
+  left: 0.5vw;
+  height: 6.5vh;
+  border: 0px solid dodgerblue;
+  border-radius: 8px;
+  text-align:center; /* this centres the socialmedia image block */
+  background-image: linear-gradient(
+    to top right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  overflow: hidden;
+}
+
+#socialmedia img {
+
+    justify-content: center;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0vw 0vw;
+    width: 3vw;
+    height: 3vh;
+    color: white;
+    border: solid 1px white;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+  }
+  
+#socialtext {
+  
+    font-family:tahoma;
+    font-size: 20px;
+    color: dodgerblue;
+    text-align: left;
+    text-shadow: 2px 2px aliceblue;
+    padding: 2px 2px;
+  
+  
+  
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+  
+  #socialmedia a:hover {
+    background-image: linear-gradient(to top , dodgerblue, aliceblue);
+    opacity: 50%;
+  }
+  
+/* All shared element with all pages */
+
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+  
+ /* Slider for index page */
+  
+  #slider {
+  position: fixed;
+  top: 18vh;
+  left: 1vw;
+  width: 98vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+#slider ul li img {
+  width: 98vw;
+  height: 75vh;
+}
+
+#slider #prev,
+#slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Slider for animals page */
+
+/******************************************************************************************************************************************************************/
+
+#slider-animals {
+  position: fixed;
+  top: 18vh;
+  left: 1vw;
+  width: 65vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider-animals ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 6500%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider-animals ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+#slider-animals ul li img {
+  width: 65vw;
+  height: 75vh;
+}
+
+#slider-animals #prev-animals,
+#slider-animals #next-animals {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider-animals #prev-animals {
+  left: 10px;
+}
+#slider-animals #next-animals {
+  right: 10px;
+}
+
+#slider-animals #prev-animals:hover,
+#slider-animals #next-animals:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+/******************************************************************************************************************************************************************/
+
+/* Slider for cafe page */
+
+#slider-cafe {
+  position: fixed;
+  top: 18vh;
+  right: 1vw;
+  width: 30vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider-cafe ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 3000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider-cafe ul li {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+#slider-cafe ul li img {
+  width: 30vw;
+  height: 75vh;
+}
+
+#slider-cafe #prev-cafe,
+#slider-cafe #next-cafe {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider-cafe #prev-cafe {
+  left: 10px;
+}
+#slider-cafe #next-cafe {
+  right: 10px;
+}
+
+#slider-cafe #prev-cafe:hover,
+#slider-cafe #next-cafe:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+/******************************************************************************************************************************************************************/
+
+/* Slider for shop page */
+
+#slider-shop {
+  position: fixed;
+  top: 18vh;
+  left: 1vw;
+  width: 48vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider-shop ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 4800%;
+  padding: 0;
+  margin: 0;
+  transition: all 450ms ease;
+  left: 0;
+}
+#slider-shop ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+#slider-shop ul li img {
+  width: 48vw;
+  height: 75vh;
+}
+
+#slider-shop #prev-shop,
+#slider-shop #next-shop {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider-shop #prev-shop {
+  left: 10px;
+}
+#slider-shop #next-shop {
+  right: 10px;
+}
+
+#slider-shop #prev-shop:hover,
+#slider-shop #next-shop:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+
+/* opening times for farm */
+
+
+#opentimes-farm {
+  position: fixed;
+  right: 12vw;
+  top: 38vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 3vw;
+  justify-content: left;
+  text-align: left;
+  text-shadow: 2px 2px aliceblue;
+  color: dodgerblue;
+}
+
+#days-farm {
+  position: fixed;
+  right: 22vw;
+  bottom: 15vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 2vw;
+  justify-content: center;
+  text-align: left;
+  text-shadow: 2px 2px aliceblue;
+  color: dodgerblue;
+}
+
+#hours-farm {
+  position: fixed;
+  right: 8vw;
+  bottom: 15vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 2vw;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px aliceblue;
+  color: dodgerblue;
+}
+
+/******************************************************************************************************************************************************************/
+
+/* opening times for cafe */
+
+#opentimes-cafe {
+  position: fixed;
+  left: 51vw;
+  bottom: 29vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  justify-content: left;
+  text-align: left;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#days-cafe {
+  position: fixed;
+  left: 51vw;
+  bottom: 10vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1vw;
+  justify-content: center;
+  text-align: left;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#hours-cafe {
+  position: fixed;
+  left: 58vw;
+  bottom: 10vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1vw;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+/******************************************************************************************************************************************************************/
+
+/* opening times for shop */
+
+#opentimes-shop {
+  position: fixed;
+  right: 6vw;
+  bottom: 29vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  justify-content: left;
+  text-align: left;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#days-shop {
+  position: fixed;
+  right: 11vw;
+  bottom: 10vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1vw;
+  justify-content: center;
+  text-align: left;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+#hours-shop {
+  position: fixed;
+  right: 3.5vw;
+  bottom: 10vh;
+  padding: 5px 5px;
+  font-family: tahoma;
+  font-size: 1vw;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px dodgerblue;
+  color: aliceblue;
+}
+
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+
+/* wrapper for starwars effect text on homepage */
+
+.wrapperindex {
+  display: flex;
+  top:25vh;
+  left:10vw;
+  width: 55vw;
+  height: 50vh;
+  position: fixed;
+  margin: 0 auto;
+  /* perspective gives us a 3d space within the element to work with*/
+  /* perspective also has the effect of pushing the content "down" */
+  perspective: 450px;
+}
+.scroll-text-index {
+  color: aliceblue;
+  text-shadow: 2px 2px rgb(228, 110, 15);
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  animation: scroll 60s linear forwards;
+  -webkit-animation: scroll 60s linear infinite;
+}
+h1,h2 {
+  text-align: center;
+}
+
+@keyframes scroll {
+  from { top: 0; transform: translateZ(0) rotateX(20deg); }
+  to { top: -3000px; transform: translateZ(-1000px) rotateX(21deg); }
+}
+
+/******************************************************************************************************************************************************************/
+
+/* wrapper for starwars effect text on cafe */
+
+.wrapper-cafe {
+  display: flex;
+  top: 25vh;
+  left: 2.5vw;
+  width: 50vw;
+  height: 40vh;
+  position: fixed;
+  margin: 0 auto;
+  /* perspective gives us a 3d space within the element to work with*/
+  /* perspective also has the effect of pushing the content "down" */
+  perspective: 450px;
+}
+
+.scroll-text-cafe {
+  color: dodgerblue;
+  text-shadow: 2px 2px rgb(228, 110, 15);
+  font-size: 2vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  animation: scroll 60s linear forwards;
+  -webkit-animation: scroll 60s linear infinite;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+@keyframes scroll {
+  from { top: 0; transform: translateZ(0) rotateX(20deg); }
+  to { top: -3000px; transform: translateZ(-1000px) rotateX(21deg); }
+}
+
+/******************************************************************************************************************************************************************/
+
+/* wrapper for starwars effect text on shop */
+
+ .wrapper-shop {
+  display: flex;
+  top:25vh;
+  left:52vw;
+  width: 28vw;
+  height: 40vh;
+  position: fixed;
+  margin: 0 auto;
+  /* perspective gives us a 3d space within the element to work with*/
+  /* perspective also has the effect of pushing the content "down" */
+  perspective: 450px;
+}
+
+ .scroll-text-shop {
+  
+  color: dodgerblue;
+  text-shadow: 2px 2px rgb(228, 110, 15);
+  font-size: 2vw;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  animation: scroll 60s linear forwards;
+  -webkit-animation: scroll 60s linear infinite;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+@keyframes scroll {
+  from { top: 0; transform: translateZ(0) rotateX(20deg); }
+  to { top: -3000px; transform: translateZ(-1000px) rotateX(21deg); }
+}
+
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+
+/* activities page general styling */
+
+/* Style the video: 100% width and height to cover the entire window */
+
+#tree {
+  position: fixed;
+  top: 18vh;
+  left: 1vw;
+  width: 97.7vw;
+  color: dodgerblue;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+}
+
+/* Add some content at the bottom of the video/page */
+
+.content-activities {
+  position: fixed;
+  top: 18vh;
+  left: 1vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  text-shadow: 2px 2px rgb(228, 110, 15);
+  width: 95vw;
+  height: 73vh;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#heading-activities {
+  font-family: tahoma;
+  font-size: 3vw;
+}
+
+#subheading-activities {
+  font-family: tahoma;
+  font-size: 2vw;
+  left: 0.5vw;
+}
+
+a {  
+	text-decoration: none;
+	color: aliceblue;
+}
+
+ul { list-style-type: none; }
+
+.act li {
+	
+  position: sticky;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  width: 40vw;
+  padding: 2px 2px;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+  background-color: dodgerblue;
+  opacity: 75%;
+}
+
+/* Style the button used to pause/play the video */
+
+#myBtn {
+  position: fixed;
+  bottom: 6vh;
+  left: 48vw;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-image: linear-gradient(to top right, rgb(228, 110, 15), aliceblue);
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(228, 110, 15),
+    dodgerblue
+  );
+  color: aliceblue;
+  text-shadow: 2px 2px dodgerblue;
+}
+
+/* Style the button used to return */
+
+#return {
+  position: fixed;
+  left: 1vw;
+  top: 5vh;
+  width: 12vw;
+  height: 6vh;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  color: dodgerblue;
+  font-family: tahoma;
+  font-size: 1vw;
+  text-shadow: 2px 2px aliceblue;
+  cursor: pointer;
+  border: 0px solid aliceblue;
+  border-radius: 8px;
+}
+
+#return:hover {
+         
+  cursor: pointer;
+  border: solid aliceblue 2px;
+
+
+}
+
+/* style the youtube embed on activities page */
+
+#ytube-activities {
+  position: fixed;
+  right: 8vw;
+  top: 38vh;
+  height: 45vh;
+  width: 40vw;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+}
+
+/******************************************************************************************************************************************************************/
+
+/* animals page general styling */
+
+/* style the youtube embed on animals page */
+
+#ytube-animals {
+  position: fixed;
+  right: 1vw;
+  top: 18vh;
+  height: 35vh;
+  width: 31vw;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+}
+
+/* style the text and info on animals page */
+
+#info-animals {
+  position: fixed;
+  right: 1vw;
+  top: 58vh;
+  height: 35vh;
+  width: 31vw;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  color: dodgerblue;
+  font-family: tahoma;
+  font-size: 1.9vw;
+  text-shadow: 2px 2px aliceblue;
+  padding: 2px 2px;
+}
+
+/******************************************************************************************************************************************************************/
+
+/* cafe page general styling */
+
+#cafe {
+  position: fixed;
+  color: rgb(228, 110, 15);
+  left: 1vw;
+  top: 18vh;
+  width: 65vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: url("../images/coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cafehead {
+  position: fixed;
+  left: 50vw;
+  top: 20.5vh;
+  width: 15vw;
+  height: 70vh;
+  padding: 2px 2px;
+  font-family: tahoma;
+  font-size: 2vw;
+  justify-content: center;
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-shadow: 2px 2px dodgerblue;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, rgb(228, 110, 15), aliceblue);
+}
+
+#cafetext {
+  position: fixed;
+  left: 51vw;
+  top: 27vh;
+  width: 13vw;
+  height: 38vh;
+  padding: 2px 2px;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  justify-content: center;
+  opacity: 100%;
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-shadow: 2px 2px dodgerblue;
+}
+#haggis {
+  width: 100%;
+  border: 2px;
+  border-radius: 8px;
+}
+
+#over21-cafe {
+  position: fixed;
+  opacity: 75%;
+  width: 15%;
+  height: 15%;
+  bottom: 33vh;
+  left: 51vw;
+}
+
+/******************************************************************************************************************************************************************/
+
+/* shop page general styling */
+
+#shop {
+  position: fixed;
+  color: rgb(228, 110, 15);
+  right: 1vw;
+  top: 18vh;
+  width: 48vw;
+  height: 75vh;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: url("../images/shop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#shophead {
+  position: fixed;
+  right: 2.5vw;
+  top: 20.5vh;
+  width: 15vw;
+  height: 70vh;
+  padding: 2px 2px;
+  font-family: tahoma;
+  font-size: 2vw;
+  justify-content: center;
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-shadow: 2px 2px dodgerblue;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top, rgb(228, 110, 15), aliceblue);
+}
+
+#shoptext {
+  position: fixed;
+  right: 3.5vw;
+  top: 27vh;
+  width: 13vw;
+  height: 38vh;
+  padding: 2px 2px;
+  font-family: tahoma;
+  font-size: 1.5vw;
+  justify-content: center;
+  opacity: 100%;
+  text-align: center;
+  color: rgb(228, 110, 15);
+  text-shadow: 2px 2px dodgerblue;
+}
+#eggs {
+  width: 100%;
+  border: 2px;
+  border-radius: 8px;
+}
+
+#over21-shop {
+  position: fixed;
+  opacity: 75%;
+  width: 15%;
+  height: 15%;
+  bottom: 33vh;
+  right: 2.5vw;
+}
+
+#shoplist {
+	
+	font-family:tahoma;
+	color: dodgerblue;
+	text-shadow: 2px 2px aliceblue;
+}
+
+/******************************************************************************************************************************************************************/
+
+/* location page general styling */
+
+#map {
+
+position: fixed;    
+left: 1vw;
+top: 18vh;
+height :75vh;
+width : 70vw;
+border: aliceblue solid 2px;
+border-radius: 8px;
+
+
+}
+
+#locationtext {
+ 
+  position: fixed;
+  right: 1vw;
+  top: 18vh;
+  height: 75vh;
+  width: 25vw;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
+  background-image: linear-gradient(to top  , rgb(228, 110, 15), aliceblue)
+
+}
+
+#loctext {
+
+  margin: auto auto;
+  padding-left: 5px;
+  font-family: tahoma;
+  font-size: 1.9vw;
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+
+
+}
+   
+/******************************************************************************************************************************************************************/
+
+/* contact page general styling */
+
+.questionmark {
+     
+    position: fixed;
+    left: 1vw;
+    top: 18vh;
+    width :74vw;
+    height: 75vh;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+
+   }
+
+#formwrapper {
+          
+     position: absolute;
+     top: 18vh;
+     right: 0.5vw;
+     width: 23.5vw;
+     height: 76vh;
+
+   }
+
+#bookingform { 
+
+    cursor:pointer;
+    background-color: aliceblue;
+    color: dodgerblue;
+
+  }
+
+#subject {
+    height: 40vh;
+    width: 23.5vw;
+    color:dodgerblue;
+  }
+
+#actionbutton {
+    display: block;
+    position: fixed;
+    height: 6vh;
+    width: 8vw;
+    top: 84vh;
+    right: 2vw;
+    border-radius: 8px;
+  }
+
+#clearform {
+    display: block;
+    position: fixed;
+    height: 6vh;
+    width: 8vw;
+    top: 77vh;
+    right: 2vw;
+    border-radius: 8px;
+  }
+  
+#fname {
+    background-color: aliceblue;
+    color: dodgerblue;
+    width: 99.5%;
+  }
+#email {
+    background-color: aliceblue;
+    color: dodgerblue;
+    width: 99.5%;
+  }
+
+#country {
+
+    background-color: aliceblue;
+    color: dodgerblue;
+    width: 99.5%;
+
+  }
+/* style dropdown list */
+
+input[type="text"],
+select {
+    color: dodgerblue;
+    background-color: aliceblue;
+    width: 25%; /* Full width */
+    padding: 1vh; /* Some padding */
+    border: 1px solid aliceblue; /* border color */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 2px; /* Add a top margin */
+    margin-left: 2px; /* Add a left margin */
+    margin-bottom: 2px; /* Bottom margin */
+  }
+  
+/* style text input list */
+
+input[type="text"],
+textarea {
+    background-color: aliceblue;
+    color: dodgerblue;
+    width: 25%; /* Full width */
+    padding: 1vh; /* Some padding */
+    border: 1px solid aliceblue; /*  border color */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 2px; /* Add a top margin */
+    margin-left: 2px; /* Add a left margin */
+    margin-bottom: 2px; /* Bottom margin */
+  }
+
+ /* style clear and submit buttons */
+ 
+input[type="submit"] {
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(228, 110, 15), aliceblue,
+      dodgerblue
+    );
+    padding: 12px 20px;
+    border: 2px;
+    border-radius: 8px;
+    font-family:tahoma;
+    font-size: 1vw;
+    color: dodgerblue;
+    text-shadow: 2px 2px aliceblue;
+  }
+input[type="submit"]:hover {
+    background-image: linear-gradient(to top left, rgb(228, 110, 15), 
+    dodgerblue);
+  }
+input[type="reset"] {
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(228, 110, 15), aliceblue,
+      dodgerblue
+    );
+    padding: 12px 20px;
+    border: 2px;
+    border-radius: 8px;
+    font-family:tahoma;
+    font-size: 1vw;
+    color: dodgerblue;
+    text-shadow: 2px 2px aliceblue;
+  }
+input[type="reset"]:hover {
+    background-image: linear-gradient(to top left, rgb(228, 110, 15), 
+    dodgerblue);
+  }
+  /******************************************************************************************************************************************************************/
+  /******************************************************************************************************************************************************************/
+  /******************************************************************************************************************************************************************/
