@@ -217,7 +217,7 @@ body {
     opacity: 50%;
   }
   
-/* All shared element with all pages */
+/* End of shared elements with all pages */
 
 /******************************************************************************************************************************************************************/
 /******************************************************************************************************************************************************************/
@@ -287,9 +287,9 @@ body {
   
 }
 
-/* Slider for animals page */
-
 /******************************************************************************************************************************************************************/
+
+/* Slider for animals page */
 
 #slider-animals {
   position: fixed;
@@ -789,10 +789,16 @@ ul { list-style-type: none; }
   font-size: 1.5vw;
   width: 40vw;
   padding: 2px 2px;
-  border: 2px solid aliceblue;
+  border: 2px solid dodgerblue;
   border-radius: 8px;
   background-color: dodgerblue;
   opacity: 75%;
+}
+
+li:hover {
+	
+	border: 2px solid aliceblue;
+	
 }
 
 /* Style the button used to pause/play the video */
