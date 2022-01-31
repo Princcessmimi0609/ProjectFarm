@@ -10,144 +10,133 @@ body {
 }
 
 .banner {
-    position: fixed;
-    top: 0vh;
-    left: 0vw;
-    height: 15vh;
-    width: 100vw;
-
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  height: 15vh;
+  width: 100vw;
 }
 
 #nav {
-
-    position: fixed;
-    z-index: 99;
-    top: 13vh;
-    left: 2vw;
-
+  position: fixed;
+  z-index: 99;
+  top: 13vh;
+  left: 2vw;
 }
 
-    #navitems a {
-		
-      position: sticky;
-      box-sizing: border-box;
-      display: block;
-      border: 2px solid dodgerblue;
-      border-radius: 8px;
-      width: 10vw;
-      height: 4vh;
-      text-decoration: none;
-      font-size: 1.5vw;
-      background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
-      color: aliceblue;
-      text-shadow: 2px 2px dodgerblue;
-      
-    }
+#navitems a {
+  position: sticky;
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid dodgerblue;
+  border-radius: 8px;
+  width: 10vw;
+  height: 4vh;
+  text-decoration: none;
+  font-size: 1.5vw;
+  background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
+  color: aliceblue;
+  text-shadow: 2px 2px dodgerblue;
+}
 
-    #navitems a:hover {
-        background-image: linear-gradient(to top , aliceblue, dodgerblue);
-      }
-      #navitems a.active {
-        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue);
-      }
-   
-    /* SHOW HAMBURGER ICON */
-	
-    #nav label { 
-	
-        position: fixed;
-        top: 5vh;
-        left: 1vw;
-        width: 1.5vw;
-        height: 3vh; 
-		display: flex;
-        align-items: center;
-        justify-content: center;
-        color: dodgerblue;
-        background-image: linear-gradient(to top right , rgb(228, 110, 15), aliceblue, dodgerblue);
-        border: solid aliceblue 0px;
-        border-radius: 8px;
-        font-family: tahoma;
-        font-style:normal;
-        font-size: 1.5vw;
-        padding: 10px;
-      }
+#navitems a:hover {
+  background-image: linear-gradient(to top, aliceblue, dodgerblue);
+}
+#navitems a.active {
+  background-image: linear-gradient(to top right, rgb(228, 110, 15), aliceblue);
+}
+
+/* SHOW HAMBURGER ICON */
+
+#nav label {
+  position: fixed;
+  top: 5vh;
+  left: 1vw;
+  width: 1.5vw;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: dodgerblue;
+  background-image: linear-gradient(
+    to top right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  border: solid aliceblue 0px;
+  border-radius: 8px;
+  font-family: tahoma;
+  font-style: normal;
+  font-size: 1.5vw;
+  padding: 10px;
+}
 
 #nav label:hover {
-         
-        cursor: pointer;
-        border: solid aliceblue 2px;
-      }
-	  
-#hamburger {
-	
-	color:red;
-	
-	
+  cursor: pointer;
+  border: solid aliceblue 2px;
 }
-  
-    /* TOGGLE SHOW/HIDE MENU */
-	
-    input[type=checkbox] {
-        visibility: hidden;
-      }
-#navitems { display: none; }
 
-#nav input:checked ~ #navitems { 
+#hamburger {
+  color: red;
+}
 
-      display: block; 
-      background-image: linear-gradient(to top right, aliceblue, dodgerblue);
-      border: solid aliceblue 2px; 
-      border-radius:8px;
-    }
+/* TOGGLE SHOW/HIDE MENU */
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+#navitems {
+  display: none;
+}
+
+#nav input:checked ~ #navitems {
+  display: block;
+  background-image: linear-gradient(to top right, aliceblue, dodgerblue);
+  border: solid aliceblue 2px;
+  border-radius: 8px;
+}
 
 .collegelogo {
- position: fixed;
- right: 1vw;
- top: 2vh;
- width: 10vw;
- height: 12vh;
-
+  position: fixed;
+  right: 1vw;
+  top: 2vh;
+  width: 10vw;
+  height: 12vh;
 }
 
 .logo {
-    position: fixed;
-    right: 50vw;
-    top: 1vh;
-    width: 20vw;
-    height: 20vh;
-    transform: translate(50%, 3%);
-  
-   
-   }
-   
+  position: fixed;
+  right: 50vw;
+  top: 1vh;
+  width: 20vw;
+  height: 20vh;
+  transform: translate(50%, 3%);
+}
+
 #footer {
-  
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 5vh;
-    bottom: 0vh;
-    left: 0vw;
-    background-image: linear-gradient(to bottom, aliceblue, dodgerblue);
-    opacity:100%;
-    overflow: hidden;
-  
-  }
-  
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  bottom: 0vh;
+  left: 0vw;
+  background-image: linear-gradient(to bottom, aliceblue, dodgerblue);
+  opacity: 100%;
+  overflow: hidden;
+}
+
 #footertext {
-  
-    display: flex;
-    color: aliceblue; 
-    font-size: 2vh;
-    text-shadow: 2px 2px dodgerblue;
-    left: 50%;
-    transform: translate(50%);
-  }
+  display: flex;
+  color: aliceblue;
+  font-size: 2vh;
+  text-shadow: 2px 2px dodgerblue;
+  left: 50%;
+  transform: translate(50%);
+}
 
-  /* position and configure social media block */
-#socialmedia  {
-
+/* position and configure social media block */
+#socialmedia {
   display: block;
   position: fixed;
   bottom: 1vh;
@@ -155,7 +144,7 @@ body {
   height: 6.5vh;
   border: 0px solid dodgerblue;
   border-radius: 8px;
-  text-align:center; /* this centres the socialmedia image block */
+  text-align: center; /* this centres the socialmedia image block */
   background-image: linear-gradient(
     to top right,
     rgb(228, 110, 15),
@@ -166,66 +155,60 @@ body {
 }
 
 #socialmedia img {
+  justify-content: center;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0vw 0vw;
+  width: 3vw;
+  height: 3vh;
+  color: white;
+  border: solid 1px white;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
 
-    justify-content: center;
-    display: inline-block;
-    border-radius: 50%;
-    padding: 0vw 0vw;
-    width: 3vw;
-    height: 3vh;
-    color: white;
-    border: solid 1px white;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    transform: scale(1);
-    animation: pulse 2s infinite;
-  }
-  
 #socialtext {
-  
-    font-family:tahoma;
-    font-size: 20px;
-    color: dodgerblue;
-    text-align: left;
-    text-shadow: 2px 2px aliceblue;
-    padding: 2px 2px;
-  
-  
-  
+  font-family: tahoma;
+  font-size: 2vh;
+  color: dodgerblue;
+  text-align: left;
+  text-shadow: 2px 2px aliceblue;
+  padding: 2px 2px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
   }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-  
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-  
-    100% {
-      transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
   }
-  
-  
-  #socialmedia a:hover {
-    background-image: linear-gradient(to top , dodgerblue, aliceblue);
-    opacity: 50%;
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
-  
+}
+
+#socialmedia a:hover {
+  background-image: linear-gradient(to top, dodgerblue, aliceblue);
+  opacity: 50%;
+}
+
 /* End of shared elements with all pages */
 
 /******************************************************************************************************************************************************************/
 /******************************************************************************************************************************************************************/
 /******************************************************************************************************************************************************************/
-  
- /* Slider for index page */
-  
-  #slider {
+
+/* Slider for index page */
+
+#slider {
   position: fixed;
   top: 18vh;
   left: 1vw;
@@ -284,7 +267,6 @@ body {
 #slider #prev:hover,
 #slider #next:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  
 }
 
 /******************************************************************************************************************************************************************/
@@ -350,7 +332,6 @@ body {
 #slider-animals #prev-animals:hover,
 #slider-animals #next-animals:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  
 }
 
 /******************************************************************************************************************************************************************/
@@ -415,7 +396,6 @@ body {
 #slider-cafe #prev-cafe:hover,
 #slider-cafe #next-cafe:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  
 }
 
 /******************************************************************************************************************************************************************/
@@ -481,7 +461,6 @@ body {
 #slider-shop #prev-shop:hover,
 #slider-shop #next-shop:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  
 }
 
 /******************************************************************************************************************************************************************/
@@ -489,7 +468,6 @@ body {
 /******************************************************************************************************************************************************************/
 
 /* opening times for farm */
-
 
 #opentimes-farm {
   position: fixed;
@@ -624,8 +602,8 @@ body {
 
 .wrapperindex {
   display: flex;
-  top:25vh;
-  left:10vw;
+  top: 25vh;
+  left: 10vw;
   width: 55vw;
   height: 50vh;
   position: fixed;
@@ -645,13 +623,20 @@ body {
   animation: scroll 60s linear forwards;
   -webkit-animation: scroll 60s linear infinite;
 }
-h1,h2 {
+h1,
+h2 {
   text-align: center;
 }
 
 @keyframes scroll {
-  from { top: 0; transform: translateZ(0) rotateX(20deg); }
-  to { top: -3000px; transform: translateZ(-1000px) rotateX(21deg); }
+  from {
+    top: 0;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -3000px;
+    transform: translateZ(-1000px) rotateX(21deg);
+  }
 }
 
 /******************************************************************************************************************************************************************/
@@ -688,18 +673,24 @@ h2 {
 }
 
 @keyframes scroll {
-  from { top: 0; transform: translateZ(0) rotateX(20deg); }
-  to { top: -3000px; transform: translateZ(-1000px) rotateX(21deg); }
+  from {
+    top: 0;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -3000px;
+    transform: translateZ(-1000px) rotateX(21deg);
+  }
 }
 
 /******************************************************************************************************************************************************************/
 
 /* wrapper for starwars effect text on shop */
 
- .wrapper-shop {
+.wrapper-shop {
   display: flex;
-  top:25vh;
-  left:52vw;
+  top: 25vh;
+  left: 52vw;
   width: 28vw;
   height: 40vh;
   position: fixed;
@@ -709,8 +700,7 @@ h2 {
   perspective: 450px;
 }
 
- .scroll-text-shop {
-  
+.scroll-text-shop {
   color: dodgerblue;
   text-shadow: 2px 2px rgb(228, 110, 15);
   font-size: 2vw;
@@ -722,13 +712,20 @@ h2 {
   -webkit-animation: scroll 60s linear infinite;
 }
 
-h1,h2 {
+h1,
+h2 {
   text-align: center;
 }
 
 @keyframes scroll {
-  from { top: 0; transform: translateZ(0) rotateX(20deg); }
-  to { top: -3000px; transform: translateZ(-1000px) rotateX(21deg); }
+  from {
+    top: 0;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -3000px;
+    transform: translateZ(-1000px) rotateX(21deg);
+  }
 }
 
 /******************************************************************************************************************************************************************/
@@ -775,15 +772,16 @@ h1,h2 {
   left: 0.5vw;
 }
 
-a {  
-	text-decoration: none;
-	color: aliceblue;
+a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
-ul { list-style-type: none; }
+ul {
+  list-style-type: none;
+}
 
 .act li {
-	
   position: sticky;
   font-family: tahoma;
   font-size: 1.5vw;
@@ -796,9 +794,7 @@ ul { list-style-type: none; }
 }
 
 li:hover {
-	
-	border: 2px solid aliceblue;
-	
+  border: 2px solid aliceblue;
 }
 
 /* Style the button used to pause/play the video */
@@ -852,11 +848,8 @@ li:hover {
 }
 
 #return:hover {
-         
   cursor: pointer;
   border: solid aliceblue 2px;
-
-
 }
 
 /* style the youtube embed on activities page */
@@ -1043,10 +1036,9 @@ li:hover {
 }
 
 #shoplist {
-	
-	font-family:tahoma;
-	color: dodgerblue;
-	text-shadow: 2px 2px aliceblue;
+  font-family: tahoma;
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
 }
 
 /******************************************************************************************************************************************************************/
@@ -1054,20 +1046,16 @@ li:hover {
 /* location page general styling */
 
 #map {
-
-position: fixed;    
-left: 1vw;
-top: 18vh;
-height :75vh;
-width : 70vw;
-border: aliceblue solid 2px;
-border-radius: 8px;
-
-
+  position: fixed;
+  left: 1vw;
+  top: 18vh;
+  height: 75vh;
+  width: 70vw;
+  border: aliceblue solid 2px;
+  border-radius: 8px;
 }
 
 #locationtext {
- 
   position: fixed;
   right: 1vw;
   top: 18vh;
@@ -1075,170 +1063,158 @@ border-radius: 8px;
   width: 25vw;
   border: aliceblue solid 2px;
   border-radius: 8px;
-  background-image: linear-gradient(to top  , rgb(228, 110, 15), aliceblue)
-
+  background-image: linear-gradient(to top, rgb(228, 110, 15), aliceblue);
 }
 
 #loctext {
-
   margin: auto auto;
   padding-left: 5px;
   font-family: tahoma;
   font-size: 1.9vw;
   color: dodgerblue;
   text-shadow: 2px 2px aliceblue;
-
-
 }
-   
+
 /******************************************************************************************************************************************************************/
 
 /* contact page general styling */
 
 .questionmark {
-     
-    position: fixed;
-    left: 1vw;
-    top: 18vh;
-    width :74vw;
-    height: 75vh;
-    border: 2px solid aliceblue;
-    border-radius: 8px;
-
-   }
+  position: fixed;
+  left: 1vw;
+  top: 18vh;
+  width: 74vw;
+  height: 75vh;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+}
 
 #formwrapper {
-          
-     position: absolute;
-     top: 18vh;
-     right: 0.5vw;
-     width: 23.5vw;
-     height: 76vh;
+  position: absolute;
+  top: 18vh;
+  right: 0.5vw;
+  width: 23.5vw;
+  height: 76vh;
+}
 
-   }
-
-#bookingform { 
-
-    cursor:pointer;
-    background-color: aliceblue;
-    color: dodgerblue;
-
-  }
+#bookingform {
+  cursor: pointer;
+  background-color: aliceblue;
+  color: dodgerblue;
+}
 
 #subject {
-    height: 40vh;
-    width: 23.5vw;
-    color:dodgerblue;
-  }
+  height: 40vh;
+  width: 23.5vw;
+  color: dodgerblue;
+}
 
 #actionbutton {
-    display: block;
-    position: fixed;
-    height: 6vh;
-    width: 8vw;
-    top: 84vh;
-    right: 2vw;
-    border-radius: 8px;
-  }
+  display: block;
+  position: fixed;
+  height: 6vh;
+  width: 8vw;
+  top: 84vh;
+  right: 2vw;
+  border-radius: 8px;
+}
 
 #clearform {
-    display: block;
-    position: fixed;
-    height: 6vh;
-    width: 8vw;
-    top: 77vh;
-    right: 2vw;
-    border-radius: 8px;
-  }
-  
+  display: block;
+  position: fixed;
+  height: 6vh;
+  width: 8vw;
+  top: 77vh;
+  right: 2vw;
+  border-radius: 8px;
+}
+
 #fname {
-    background-color: aliceblue;
-    color: dodgerblue;
-    width: 99.5%;
-  }
+  background-color: aliceblue;
+  color: dodgerblue;
+  width: 99.5%;
+}
 #email {
-    background-color: aliceblue;
-    color: dodgerblue;
-    width: 99.5%;
-  }
+  background-color: aliceblue;
+  color: dodgerblue;
+  width: 99.5%;
+}
 
 #country {
-
-    background-color: aliceblue;
-    color: dodgerblue;
-    width: 99.5%;
-
-  }
+  background-color: aliceblue;
+  color: dodgerblue;
+  width: 99.5%;
+}
 /* style dropdown list */
 
 input[type="text"],
 select {
-    color: dodgerblue;
-    background-color: aliceblue;
-    width: 25%; /* Full width */
-    padding: 1vh; /* Some padding */
-    border: 1px solid aliceblue; /* border color */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 2px; /* Add a top margin */
-    margin-left: 2px; /* Add a left margin */
-    margin-bottom: 2px; /* Bottom margin */
-  }
-  
+  color: dodgerblue;
+  background-color: aliceblue;
+  width: 25%; /* Full width */
+  padding: 1vh; /* Some padding */
+  border: 1px solid aliceblue; /* border color */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 2px; /* Add a top margin */
+  margin-left: 2px; /* Add a left margin */
+  margin-bottom: 2px; /* Bottom margin */
+}
+
 /* style text input list */
 
 input[type="text"],
 textarea {
-    background-color: aliceblue;
-    color: dodgerblue;
-    width: 25%; /* Full width */
-    padding: 1vh; /* Some padding */
-    border: 1px solid aliceblue; /*  border color */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 2px; /* Add a top margin */
-    margin-left: 2px; /* Add a left margin */
-    margin-bottom: 2px; /* Bottom margin */
-  }
+  background-color: aliceblue;
+  color: dodgerblue;
+  width: 25%; /* Full width */
+  padding: 1vh; /* Some padding */
+  border: 1px solid aliceblue; /*  border color */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 2px; /* Add a top margin */
+  margin-left: 2px; /* Add a left margin */
+  margin-bottom: 2px; /* Bottom margin */
+}
 
- /* style clear and submit buttons */
- 
+/* style clear and submit buttons */
+
 input[type="submit"] {
-    background-image: linear-gradient(
-      to bottom right,
-      rgb(228, 110, 15), aliceblue,
-      dodgerblue
-    );
-    padding: 12px 20px;
-    border: 2px;
-    border-radius: 8px;
-    font-family:tahoma;
-    font-size: 1vw;
-    color: dodgerblue;
-    text-shadow: 2px 2px aliceblue;
-  }
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  padding: 12px 20px;
+  border: 2px;
+  border-radius: 8px;
+  font-family: tahoma;
+  font-size: 1vw;
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+}
 input[type="submit"]:hover {
-    background-image: linear-gradient(to top left, rgb(228, 110, 15), 
-    dodgerblue);
-  }
+  background-image: linear-gradient(to top left, rgb(228, 110, 15), dodgerblue);
+}
 input[type="reset"] {
-    background-image: linear-gradient(
-      to bottom right,
-      rgb(228, 110, 15), aliceblue,
-      dodgerblue
-    );
-    padding: 12px 20px;
-    border: 2px;
-    border-radius: 8px;
-    font-family:tahoma;
-    font-size: 1vw;
-    color: dodgerblue;
-    text-shadow: 2px 2px aliceblue;
-  }
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(228, 110, 15),
+    aliceblue,
+    dodgerblue
+  );
+  padding: 12px 20px;
+  border: 2px;
+  border-radius: 8px;
+  font-family: tahoma;
+  font-size: 1vw;
+  color: dodgerblue;
+  text-shadow: 2px 2px aliceblue;
+}
 input[type="reset"]:hover {
-    background-image: linear-gradient(to top left, rgb(228, 110, 15), 
-    dodgerblue);
-  }
-  /******************************************************************************************************************************************************************/
-  /******************************************************************************************************************************************************************/
-  /******************************************************************************************************************************************************************/
+  background-image: linear-gradient(to top left, rgb(228, 110, 15), dodgerblue);
+}
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************/
